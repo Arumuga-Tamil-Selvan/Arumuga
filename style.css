@@ -1,0 +1,258 @@
+/* Default styles */
+.page {
+    width: 70%;
+    /* other styles */
+  }
+  
+  /* Styles for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .page {
+      width: 90%;
+    }
+  }
+  
+  /* Styles for screens between 768px and 1024px */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .page {
+      width: 80%;
+    }
+  }
+  
+
+/* body{
+    background-color: rgb(104, 101, 101);
+} */
+*{
+    color: #464A4E;
+    font-family: lato;
+    letter-spacing: 0.05%;
+}
+
+.page{
+    width: 70%;
+    height: 200%;
+    margin-left: 15%;
+    margin-top: 3%;
+    background-color: #FFFFFF;
+    border: 2px solid gray;
+}
+.heading{
+    width: 100%;
+    height: 7%;
+    padding-top: 5%;
+    background-color:  #f4f4f4;
+    letter-spacing: 5px;
+    position: relative;
+    font-family: Raleway;
+
+}
+.name{
+    padding-left: 13%;
+    padding-bottom: 1%;
+    /* font-family: monospace;*/
+    letter-spacing: 4px;
+    width: 60%;
+    font-family: Raleway;
+    text-decoration: gray;
+    
+} 
+.image{
+    width: 13%;
+    height: 20%;
+    float: right;
+    padding-left: 53%;
+    top:9%;
+    position: absolute;
+
+}
+.categories{
+    margin-left: 3%;
+    margin-top: 5%;
+    width: 97%;
+    height: 100%;
+
+}
+.contact + .profile,
+.skills + .education,
+.experience + .certifications {
+  padding-top: 20px;
+}
+
+.contacthl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact {
+    height: 40%;
+    flex: 0 0 48%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-underline-position: below;
+    position: relative;
+    padding-left: 2%;
+    font-family: lato;
+  }
+  
+  .contactp {
+    text-align: left 2%;
+    text-decoration: underline;
+    font-size: 100%;
+    font-family: lato;
+  }
+  
+  .contactl {
+    padding-left: 4%;
+    font-size: 90%;
+    color: #5d5c5c;
+    list-style: none;
+  }
+  
+  .verticalline {
+    width: 0.01%;
+    height: 127%;
+    background-color: black;
+    color: #5d5c5c;
+    top: 33%;
+    position: absolute;
+    left: 50%;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .profile {
+      width: 30%;
+      position: absolute;
+      float: right;
+      top: 38.5%;
+      left: 52%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
+  
+    /* background-color: bisque; */
+
+.skills{
+    height: 40%;
+    width: 45%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-underline-position: below;
+    position: relative;
+    padding-left: 2%;
+    /* background-color: bisque; */
+
+}
+.skillsl{
+    padding: 1%;
+    text-decoration:#464A4E;
+    list-style-type: disc;
+    letter-spacing: 0.05dvh;
+    padding-bottom: 5%;
+    list-style-position: inside;
+}
+@media screen and (max-width: 600px) {
+    .education {
+      padding-top: 0;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .education {
+      padding-top: 0;
+    }
+  }
+  
+  @media screen and (min-width: 901px) {
+    .education {
+      padding-top: 0;
+    }
+  }
+  
+.education{
+    height: 35%;
+    width: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-underline-position: below;
+    position: absolute;
+    padding-left: 2%;
+    float: right;
+    top: 76%;
+    left: 52%;
+    /* background-color: bisque; */
+    line-height-step: 0.01%;
+    color: #464A4E;
+
+}
+
+.marks{
+    width: 40%;
+    height: 45%;
+    margin-left: 2%;
+    height: max-content;
+    position: relative;
+    color: #464A4E;
+}
+/* This is the code for Bar Chart */
+/* Bar Styles */
+/* Bar Styles */
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+    position: relative;
+}
+.tenth {
+    position: absolute;
+    float: right;
+    top: 50%;
+}
+.twelfth {
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 80%;
+}
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 10px;
+}
+.progress .fill {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+.marksp {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #464A4E;
+
+}
+
+/* Bar Colors */
+.tenth .fill {
+    width: 86.4%;
+}
+.twelfth .fill {
+    width: 86.4%;
+}
+.certifications{
+    height: 35%;
+    width: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-underline-position: below;
+    position: absolute;
+    padding-left: 2%;
+    float: right;
+    top: 112%;
+    left: 52%;
+    color: #464A4E;
+    /* background-color: bisque; */
+}
